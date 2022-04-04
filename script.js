@@ -47,15 +47,15 @@ c.lineTo(midX-s+1000,midY+50);
 c.stroke();
 
 //Trädet, stammen
-const b = 100;
+const b = 75;
 c.fillStyle = "brown";
-c.fillRect(midX-b/2, midY + 50, b, b+50);
+c.fillRect(midX-b/2, midY + 100, b, b+50);
 
 //Trädet, löv
 const r = 150; // Cirkelns radie
 c.fillStyle = "pink";
 c.beginPath();
-c.ellipse(midX, midY, 100, 150, Math.PI / 100, 0, 4* Math.PI); 
+c.ellipse(midX, midY, 100, 150, Math.PI * 0, 0, 4* Math.PI); 
 c.closePath();
 c.fill();
 
