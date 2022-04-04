@@ -48,15 +48,22 @@ c.stroke();
 
 //Trädet, stammen
 const b = 75;
+c.strokeStyle = "black";
+c.lineWidth = "5";
 c.fillStyle = "brown";
-c.fillRect(midX-b/2, midY + 100, b, b+50);
+c.beginPath();
+c.rect(midX-b/2, midY + 100, b, b+50);
+c.stroke();
+c.fill();
 
 //Trädet, löv
 const r = 150; // Cirkelns radie
+c.strokeStyle = "yellow";
+c.lineWidth = "10";
 c.fillStyle = "pink";
 c.beginPath();
 c.ellipse(midX, midY, 100, 150, Math.PI * 0, 0, 4* Math.PI); 
-c.closePath();
+c.stroke();
 c.fill();
 
 }
